@@ -1,0 +1,26 @@
+.navbar {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  overflow: hidden;
+  background: #222;
+  color: #fff;
+}
+.navbar h1 {
+  font-weight: bold;
+  font-size: 16px;
+  float: left;
+  margin-left: 20px;
+}
+.navbar strong {
+  color: #cf4646;
+}
+.navbar div {
+  font-size: 14px;
+  float: right;
+  margin-right: 30px;
+  cursor: pointer;
+}
+.user-icon {
+  font-size: 18px;
+}

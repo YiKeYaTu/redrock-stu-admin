@@ -1,0 +1,36 @@
+.button-grp > a {
+  width: 100px;
+  height: 30px;
+  background: #e9ecf2;
+  cursor: pointer;
+  border: none;
+}
+.button-grp> a {
+}
+.work-type:hover {
+  background: #ddd;
+}
+.choose-work {
+  background: #cf4646 !important;
+}
+.choose-work > a {
+  color: #f1f1f1;
+}
+.work-list {
+  font-size: 12px;
+  text-align: left;
+  border-collapse: collapse;
+}
+.work-list th {
+  color: #222;
+  min-width: 100px;
+  height: 50px;
+  padding: 0 10px;
+  border-bottom: 1px solid #ddd;
+}
+.work-list td {
+  color: #5f6468;
+  background: #fcf8e3;
+  padding: 0 10px;
+  height: 40px;
+}

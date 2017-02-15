@@ -1,0 +1,34 @@
+.user {
+  color: #5f6468;
+  overflow: hidden;
+}
+.recent-inf {
+  margin-left: 240px;
+}
+.base-inf {
+  float: left;
+  width: 220px;
+}
+.user-name{
+  margin-left: 20px;
+}
+.user-num {
+  width: 200px;
+  padding: 0 0 20px 20px;
+  margin-top: -10px;
+  font-size: 14px;
+  border-bottom: 1px solid rgb(220, 220, 220);
+}
+.departments {
+  width: 220px;
+  padding: 10px 10px;
+}
+.icon {
+  font-size: 40px;
+  margin-right: 4px;
+  cursor: pointer;
+  color: #5f6468;
+}
+.icon:hover {
+  color: #cf4646;
+}

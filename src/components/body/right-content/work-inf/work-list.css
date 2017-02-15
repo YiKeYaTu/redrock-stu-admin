@@ -1,0 +1,17 @@
+.work-list {
+  font-size: 12px;
+  text-align: left;
+  border-collapse: collapse;
+}
+.work-list th {
+  color: #222;
+  min-width: 100px;
+  height: 50px;
+  padding: 0 10px;
+  border-bottom: 1px solid #ddd;
+}
+.work-list td {
+  color: #5f6468;
+  padding: 0 10px;
+  height: 40px;
+}

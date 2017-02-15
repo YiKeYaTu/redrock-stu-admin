@@ -1,0 +1,26 @@
+.right-content {
+  margin-left: 180px;
+  background: rgb(250, 250, 250);
+}
+.title {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  color: #5f6468;
+  background: #e9ecf2;
+  font-size: 14px;
+}
+.icon {
+  color: #cf4646;
+  font-size: 16px;
+  margin-left: 20px;
+}
+.home::before {
+  content: '/';
+  color: #ccc;
+  margin-right: 4px;
+  font-size: 12px;
+}
+.container {
+  padding: 16px 16px;
+}
