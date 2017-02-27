@@ -5,18 +5,20 @@ import Header from './header/index';
 import Body from './body/index';
 
 export default Dbind.createClass({
-  willUpdate() {
-    console.log(this.props)
+  routeEnter() {
+    // console.log(213)
   },
-  data: {
-    leftRowActive: 0,
-    rightContentTitle: 0,
-    changeActive(index) {
-      this.trackingUpdate({
-        leftRowActive: index,
-        rightContentTitle: index
-      });
-    },
+  data() {
+    return {
+      leftRowActive: 0,
+      rightContentTitle: 0,
+      changeActive(index) {
+        this.trackingUpdate({
+          leftRowActive: index,
+          rightContentTitle: index
+        });
+      },
+    }
   },
   template: `
     <app-header></app-header>

@@ -1,0 +1,23 @@
+.page-content {
+  overflow: hidden;
+  margin-top: 10px;
+}
+.page-content > li {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  background: #e9ecf2;
+  color: #5f6468;
+  float: left;
+  font-size: 14px;
+  cursor: pointer;
+  margin-right: 8px;
+}
+.page-content > li:hover {
+  background: #ddd;
+}
+.active {
+  background :#cf4646 !important;
+  color: #f1f1f1 !important;
+}

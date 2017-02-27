@@ -1,20 +1,18 @@
-.button-grp > a {
+.button-grp button {
   width: 100px;
   height: 30px;
+  border: none;
+  color: #5f6468;
   background: #e9ecf2;
   cursor: pointer;
-  border: none;
+  outline: none;
 }
-.button-grp> a {
-}
-.work-type:hover {
+.button-grp button:hover {
   background: #ddd;
 }
-.choose-work {
+.button-active {
+  color: #f1f1f1 !important;
   background: #cf4646 !important;
-}
-.choose-work > a {
-  color: #f1f1f1;
 }
 .work-list {
   font-size: 12px;

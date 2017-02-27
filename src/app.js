@@ -5,10 +5,10 @@ import RouteConfig from './route';
 require('./iconfont');
 
 const App = Dbind.createClass({
-  data: {
-    RouteConfig,
-  },
-  willMount() {
+  data() {
+    return {
+      RouteConfig,
+    }
   },
   template: `
     <router

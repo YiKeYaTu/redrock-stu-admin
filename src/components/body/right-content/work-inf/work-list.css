@@ -15,3 +15,14 @@
   padding: 0 10px;
   height: 40px;
 }
+.upload {
+  cursor: pointer;
+  border: none;
+  background: #333;
+  color: #f1f1f1;
+  padding: 4px 10px;
+}
+.upload:hover {
+  background: #cf4646;
+  color: #f1f1f1;
+}

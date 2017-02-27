@@ -1,9 +1,7 @@
 import Stu from './components/stu';
 import UserInf from './components/body/right-content/user-inf/index';
 import WorkInf from './components/body/right-content/work-inf/index';
-  import UnFinish from './components/body/right-content/work-inf/unfinish';
-  import Finish from './components/body/right-content/work-inf/finish'
-
+  import WorkList from './components/body/right-content/work-inf/work-list';
 
 export default {
     path: '/stu',
@@ -16,10 +14,13 @@ export default {
       component: WorkInf,
       children: [{
         path: 'unfinish',
-        component: UnFinish
+        component: WorkList
       }, {
         path: 'finish',
-        component: Finish
+        component: WorkList
+      }, {
+        path: 'expire',
+        component: WorkList
       }]
     }]
 }

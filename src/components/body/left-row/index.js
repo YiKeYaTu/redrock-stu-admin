@@ -8,7 +8,7 @@ const list = [{
   icon: '#icon-user',
   val: '我的信息'
 }, {
-  href: '/stu/work',
+  href: '/stu/work/unfinish',
   icon: '#icon-homework',
   val: '作业任务'
 }, {
@@ -19,9 +19,11 @@ const list = [{
 const activeClass = css['active'];
 
 export default Dbind.createClass({
-  data: {
-    list,
-    activeClass
+  data() {
+    return {
+      list,
+      activeClass
+    }
   },
   template: `
     <section ref="left-row" class="${css['left-row']}">
@@ -30,7 +32,9 @@ export default Dbind.createClass({
           <svg class="icon ${css['icon']}" aria-hidden="true">
             <use xlink:href="{{ list[i].icon }}"></use>
           </svg>
-          <route-link to="{{ list[i].href }}" value="{{ list[i].val }}"></route-link>
+          <route-link to="{{ list[i].href }}">
+            {{ list[i].val }}
+          </route-link>
         </li>
       </ul>
     </section>

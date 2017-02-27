@@ -1,7 +1,9 @@
 var express = require('express');
 var app = express();
+// var http = require('http').createServer();
 var fs = require('fs');
 
+// var ws = require('lc-websocket')(http);
 var config = require('./server.config.js');
 
 var { staticPath, appRoutePath, appStaticPath, entry } = config;
@@ -22,5 +24,11 @@ app.get(appStaticPath + '*', function(req, res) {
     res.send('Cannot GET ' + req.path);
   }
 });
+
+// ws.on('connection', function(socket) {
+//   socket.on('data', function(msg) {
+//     console.log(msg);
+//   });
+// })
  
 app.listen(8080);

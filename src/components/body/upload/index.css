@@ -1,0 +1,42 @@
+.upload-content {
+  width: 500px;
+  height: 400px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  background: #f1f1f1;
+}
+.upload-list {
+  height: 100%;
+}
+.upload-list > li {
+  float: left;
+  height: 100%;
+}
+.upload-inf {
+  width: 160px;
+  overflow-y: scroll;
+  background: #222;
+}
+.upload-inf + li {
+  width: 340px;
+}
+.upload-inf h3 {
+  margin: 0;
+  height: 30px;
+  line-height: 30px;
+  font-weight: normal;
+  padding-left: 10px;
+  color: #f1f1f1;
+  cursor: pointer;
+  font-size: 12px;
+}
+.upload-inf h3:hover {
+  background: #111;
+}
+.active {
+  background: #cf4646 !important;
+}

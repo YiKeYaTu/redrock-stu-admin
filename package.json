@@ -19,7 +19,8 @@
     "webpack": "^1.13.2"
   },
   "dependencies": {
-    "dbind": "^1.1.3",
-    "dbind-router": "^1.0.1"
+    "dbind": "^1.2.3",
+    "dbind-router": "^1.0.7",
+    "lc-websocket": "^1.0.4"
   }
 }

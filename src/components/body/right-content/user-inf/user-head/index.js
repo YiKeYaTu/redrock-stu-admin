@@ -2,9 +2,11 @@ import Dbind from 'dbind';
 import css from './index.css';
 
 export default Dbind.createClass({
-  data: {
-    handleSrc(src) {
-      return `url(${src})`;
+  data() {
+    return {
+      handleSrc(src) {
+        return `url(${src})`;
+      }
     }
   },
   template: `

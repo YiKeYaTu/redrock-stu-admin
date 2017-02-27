@@ -1,9 +1,11 @@
 import Dbind from 'dbind';
 import css from './work-list.css';
 
-export default Dbind.createClass({
-  willMount() {
+import Page from './page';
 
+export default Dbind.createClass({
+  routeEnter(path) { 
+    this.props.handleWorkListRouteEnter(path);
   },
   template: `
     <table class="${css['work-list']}">
@@ -16,14 +18,34 @@ export default Dbind.createClass({
       </thead>
       <tbody>
         <tr data-each="i in tbody" style="background: {{ bg }}">
-          <td data-each="j in tbody[i]">
-              {{ tbody[i][j] }}
+          <td>
+              {{ tbody[i].dep }}
+          </td>
+          <td>
+              {{ tbody[i].title }}
+          </td>
+          <td>
+              {{ tbody[i].inf }}
+          </td>
+          <td>
+              {{ tbody[i].time }}
+          </td>
+          <td>
+              {{ tbody[i].endTime }}
+          </td>
+          <td>
+              <button class="${css['upload']}">提交</button>
           </td>
         </tr>
       </tbody>
     </table>
+    <page
+      currentPage="{{ currentPage }}"
+      totalPage="{{ totalPage }}"
+      handlePageItemClick="{{ handlePageItemClick }}"
+    ></page>
   `,
   components: {
-
+    'page': Page
   }
 });

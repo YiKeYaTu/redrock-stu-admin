@@ -6,9 +6,11 @@ import UserInf from './user-inf/index';
 const title = ['我的信息', '作业任务', '课件资料'];
 
 export default Dbind.createClass({
-  data: {
-    getTitle(index) {
-      return title[index];
+  data() {
+    return {
+      getTitle(index) {
+        return title[index];
+      }
     }
   },
   template: `

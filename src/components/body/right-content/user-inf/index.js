@@ -21,9 +21,11 @@ export default Dbind.createClass({
   willMount() {
     this.props.changeActive(0);
   },
-  data: {
-    list,
-    active
+  data() {
+    return {
+      list,
+      active
+    }
   },
   template: `
     <section class="${css['user']}">

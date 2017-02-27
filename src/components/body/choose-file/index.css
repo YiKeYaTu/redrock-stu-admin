@@ -1,0 +1,37 @@
+.drag-file {
+  width: 200px;
+  height: 200px;
+  margin: 40px auto;
+  background: #ddd;
+  font-size: 100px;
+  text-align: center;
+  color: #333;
+  line-height: 170px;
+  cursor: pointer;
+}
+.drag-file:hover {
+  color: #cf4646 !important;
+}
+.upload-inf {
+  margin-left: 70px;
+  font-size: 14px;
+}
+.upload-inf > p {
+  width: 200px;
+  color: #cf4646;
+}
+.upload-inf span {
+  color: #222;
+}
+.notice > span {
+  display: block;
+  text-align: center;
+}
+.upload-button {
+  border: none;
+  margin-top: 4px;
+  padding: 3px 20px;
+  cursor: pointer;
+  color: #f1f1f1;
+  background: #222;
+}
